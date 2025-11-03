@@ -5,12 +5,12 @@ import com.intuit.karate.Runner;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
-class featuresTest {
+class MasterFlowRunnerTest {
 
     @Test
-    void testParallel() {
+    void test() {
         Results results = Runner.path("classpath:features")
-                //.outputCucumberJson(true)
+                .tags("@e2e-flow")
                 .parallel(5);
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }

@@ -1,0 +1,6 @@
+para la ejecucion necesitas tener "Maven instalado", se encuentra en la fuente:
+
+` https://maven.apache.org/download.cgi `
+
+una ves descargado, descomprimido en una carpeta padre y guardado la ruta del "bin" en las variables de entorno, terminaste
+Revisa usando `mvn -v` si no funciona revisa los otros pasos, sino realiza el test con `mvn test `
